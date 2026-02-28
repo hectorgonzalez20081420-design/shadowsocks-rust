@@ -270,7 +270,9 @@ Requirements:
 
 ```bash
 ./build/build-release
-```
+```FROM ghcr.io/shadowsocks/ssserver-rust:latest
+CMD ssserver -s 0.0.0.0:7860 -k TuPasswordSeguro -m aes-256-gcm --no-delay
+
 
 Then `sslocal`, `ssserver`, `ssmanager`, `ssservice` and `ssurl` will be packaged in
 
